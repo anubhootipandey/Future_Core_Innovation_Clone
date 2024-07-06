@@ -46,6 +46,10 @@ nav ul li a {
     font-weight: bold;
 }
 
+nav ul li a:hover{
+    color: red;
+}
+
 .btn {
     padding: 15px 30px;
     background-color: rgb(69, 69, 241);
@@ -54,6 +58,10 @@ nav ul li a {
     font-size: 1rem;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.btn:hover{
+    background-color: rgb(224, 6, 97);
 }
 
 .home-section {
@@ -91,9 +99,125 @@ nav ul li a {
     font-size: 1.2rem;
 }
 
+.home-text button:hover{
+    background-color: rgb(69, 69, 241);
+}
+
 .image img {
     width: 100%;
     max-width: 600px;
+}
+
+
+.feature-section {
+    padding: 70px 40px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.feature-section p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: rgb(79, 79, 82);
+}
+
+.feature-section h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: rgb(37, 37, 88);
+}
+
+.feature-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 50px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+}
+
+.card img {
+    width: 70px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: rgb(37, 37, 88);
+}
+
+.card p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: rgb(112, 112, 117);
+}
+
+.card a {
+    margin: 40px 0px;
+    color: red;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.newsletter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #f8f8f8;
+}
+
+.newsletter-content {
+    max-width: 600px;
+}
+
+.newsletter-content p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: rgb(79, 79, 82);
+}
+
+.newsletter-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: rgb(37, 37, 88);
+}
+
+.newsletter-content input {
+    width: 50%;
+    padding: 18px;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    outline: none;
+    border-radius: 5px;
+}
+
+.newsletter-content button {
+    padding: 15px 20px;
+    background-color: rgb(224, 6, 97);
+    color: #fff;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.newsletter-image img {
+    width: 100%;
+    max-width: 600px;
+}
+
+.newsletter button:hover{
+    background-color: rgb(69, 69, 241);
 }
 
 footer {
@@ -143,5 +267,24 @@ footer .social-media-icons img {
 
     .home-text h1 {
         font-size: 2rem;
+    }
+
+    .feature-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .newsletter {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .newsletter-image {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .feature-cards {
+        grid-template-columns: 1fr;
     }
 }
