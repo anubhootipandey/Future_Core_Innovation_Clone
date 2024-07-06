@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: transparent;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    z-index: 1000;
+}
+
+header.scrolled {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    width: 150px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.btn {
+    padding: 15px 30px;
+    background-color: rgb(69, 69, 241);
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.home-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 20px 50px; 
+    margin: 0px 50px;
+}
+
+.home-text {
+    max-width: 600px;
+}
+
+.home-text h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    color: rgb(37, 37, 88);
+}
+
+.home-text p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: rgb(112, 112, 117);
+    font-weight: 550;
+}
+
+.home-text button {
+    padding: 15px 30px;
+    background-color: rgb(224, 6, 97);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+.image img {
+    width: 100%;
+    max-width: 600px;
+}
+
+footer {
+    padding: 20px;
+    background-color: rgb(37, 37, 88);
+    border-top: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+footer .social-media-icons img {
+    width: 30px;
+    margin: 0 10px;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .home-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 80px 20px 50px; 
+    }
+
+    .home-text, .image {
+        max-width: 100%;
+    }
+
+    .home-text h1 {
+        font-size: 2rem;
+    }
+}
