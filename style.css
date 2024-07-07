@@ -57,7 +57,7 @@ nav ul li a:hover{
     color: #fff;
     border: none;
     font-size: 1rem;
-    border-radius: 5px;
+    border-radius: 3px;
     cursor: pointer;
 }
 
@@ -96,7 +96,7 @@ nav ul li a:hover{
     color: #fff;
     border: none;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 3px;
     font-size: 1.2rem;
 }
 
@@ -171,7 +171,7 @@ nav ul li a:hover{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 50px;
+    padding: 30px;
     background-color: #f8f8f8;
 }
 
@@ -203,14 +203,14 @@ nav ul li a:hover{
 }
 
 .newsletter-content button {
-    padding: 15px;
+    padding: 14px;
     background-color: rgb(224, 6, 97);
     color: #fff;
     border: none;
     width: 100%;
     max-width: 160px;
     font-size: 1.2rem;
-    border-radius: 5px;
+    border-radius: 3px;
     cursor: pointer;
 }
 
@@ -372,8 +372,21 @@ footer .social-media-icons img {
     }
 
     .newsletter {
-        flex-direction: column;
-        text-align: center;
+        flex-direction: column-reverse; 
+    }
+
+    .newsletter-content p {
+        margin-top: 20px;
+        font-size: 1.2rem;
+    }
+    
+    .newsletter-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .newsletter-content button{
+        padding: 13px;
+        font-size: 1rem;
     }
 
     .home-section {
@@ -386,10 +399,6 @@ footer .social-media-icons img {
 
     .home-section .home-text {
         order: 2; 
-    }
-
-    .newsletter {
-        flex-direction: column-reverse; 
     }
 }
 
