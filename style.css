@@ -349,11 +349,35 @@ footer .social-media-icons img {
     .newsletter-image {
         display: none;
     }
+
+    .home-section {
+        flex-direction: column; 
+    }
+
+    .home-section .image {
+        order: 1; 
+    }
+
+    .home-section .home-text {
+        order: 2; 
+    }
 }
 
 @media (min-width: 769px) {
     .hamburger {
         display: none;
+    }
+
+    .home-section {
+        flex-direction: row; 
+    }
+
+    .home-section .image {
+        order: 2;
+    }
+
+    .home-section .home-text {
+        order: 1; 
     }
 }
 
