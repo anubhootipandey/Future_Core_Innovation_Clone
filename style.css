@@ -346,10 +346,6 @@ footer .social-media-icons img {
         text-align: center;
     }
 
-    .newsletter-image {
-        display: none;
-    }
-
     .home-section {
         flex-direction: column; 
     }
@@ -360,6 +356,10 @@ footer .social-media-icons img {
 
     .home-section .home-text {
         order: 2; 
+    }
+
+    .newsletter {
+        flex-direction: column-reverse; 
     }
 }
 
@@ -378,6 +378,11 @@ footer .social-media-icons img {
 
     .home-section .home-text {
         order: 1; 
+    }
+
+    .newsletter {
+        flex-direction: row;
+        text-align: left;
     }
 }
 
