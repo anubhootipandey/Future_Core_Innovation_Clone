@@ -74,7 +74,7 @@ nav ul li a:hover{
 }
 
 .home-text {
-    max-width: 600px;
+    max-width: 540px;
 }
 
 .home-text h1 {
@@ -84,10 +84,9 @@ nav ul li a:hover{
 }
 
 .home-text p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-bottom: 20px;
     color: rgb(112, 112, 117);
-    font-weight: 550;
 }
 
 .home-text button {
@@ -165,6 +164,80 @@ nav ul li a:hover{
     font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
+}
+
+.blog-section {
+    padding: 60px 20px;
+    background-color: #f0f0f0;
+}
+
+.blog-section p {
+    color: #555;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.blog-section h1 {
+    color: rgb(37, 37, 88);
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.blog-cards {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 10px 100px;
+}
+
+.blog-cards .card {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.blog-cards .card:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.blog-cards .card img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.blog-cards .card img:hover{
+    transform: translateY(-5px);
+}
+
+.blog-cards .card .text {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.blog-cards .card .text p {
+    color: #999;
+    font-weight: bold;
+}
+
+.blog-cards .card .text p:last-child {
+    color: #999;
+    font-size: 0.9em;
+}
+
+.blog-cards .card h2 {
+    color: rgb(37, 37, 88);
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.blog-cards .card h2:hover{
+    color: red;
 }
 
 .newsletter {
@@ -337,15 +410,19 @@ footer .social-media-icons img {
     }
 
     .home-text h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
+    }
+
+    .home-text p {
+        font-size: 1rem;
     }
 
     .feature-section h1{
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
 
     .feature-section p{
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     .feature-cards {
@@ -369,6 +446,23 @@ footer .social-media-icons img {
     
     .feature-cards .card a {
         font-size: 1rem;
+    }
+
+    .blog-section p{
+        font-size: 0.8rem;
+    }
+
+    .blog-section h1 {
+        font-size: 1.6rem;
+    }
+
+    .blog-cards {
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    .blog-cards .card h2 {
+        font-size: 1.1rem;
     }
 
     .newsletter {
